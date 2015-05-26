@@ -84,8 +84,15 @@ $(document).ready(function(){
         result+=dato3;
         $("#checkbox-3e").prop("checked", false).checkboxradio( "refresh" ); // para quitar la marca
     }
-    
+
     document.getElementById("resultado").innerHTML=result;
     result="";
+
     });
 }); 
+
+function desmarcar(){
+$("input:checkbox").prop('checked', false);
+$("input:checkbox").checkboxradio();
+$("input:checkbox").checkboxradio("refresh");
+}
